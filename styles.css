@@ -69,3 +69,31 @@ a:active{
 .description{
     text-decoration: none;
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    border: 2px solid yellow;
+}
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: silver;
+    border: 2px solid gold;
+}
+.cell:hover {
+    background-color: red;
+}
+h1 {
+    text-align: center;
+}
